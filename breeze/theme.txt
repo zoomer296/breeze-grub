@@ -1,5 +1,10 @@
 # Copyright (C) 2016 Harald Sitter <sitter@kde.org>
 #
+# Slightly modified by Larry Chase <zoomer296@gmail.com>. 
+# Changed background color and added selection highlights.
+#
+# I don't know anything without my screen. ~ Peridot
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
 # published by the Free Software Foundation; either version 3 of
@@ -27,8 +32,7 @@ title-text: ""
 title-font: "Unifont Regular 14"
 message-font: "Unifont Regular 14"
 message-color: "#7f8c8d"
-message-bg-color: "#4d4d4d" # TODO: whatever is this for?
-desktop-color: "#000000" # black
+desktop-color: "007,007,007"
 
 # title
 # NOTE: can't put this in a vbox because GRUB is crap and item highlighting
@@ -64,6 +68,7 @@ desktop-color: "#000000" # black
     item_color = "#7f8c8d"
     selected_item_font = "Unifont Bold 16"
     selected_item_color = "#ffffff"
+    selected_item_pixmap_style= "highlight_*.png"
 }
 
 + vbox {
